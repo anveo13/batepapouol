@@ -1,0 +1,259 @@
+     @media (max-width: 615px) {
+        
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        background-color: #F3F3F3;
+        position: relative;
+    }
+
+    .login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 200%;
+        background-color: white;
+        position: absolute;
+        z-index: 100;
+        top: -106px;
+        left: 0;
+    }
+
+    .login input {
+        width: 250px;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .login input::placeholder {
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+    }
+
+    .login .logo {
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+
+    .login button {
+        margin-top: 20px;
+        width: 80px;
+        height: 40px;
+        font-size: 18px;
+        border-radius: 10px;
+        outline: none;
+    }
+
+    .login .on {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        align-items: center;
+    }
+
+    .loading {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 200px;
+        left: 100px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .loading img {
+        width: 200px;
+    }
+    
+    header {
+        display: flex;
+        width: 100%;
+        height: 80px;
+        justify-content: space-between;
+        background-color: white;
+        align-items: center;
+        font-size: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .logo, ion-icon, .input, .user, .check, .private-visibility div, .public-visibility div{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    main {
+        margin-top: 106px;
+        margin-bottom: 106px;
+        min-height: 1000px;
+        max-height: 100%;
+    }
+
+    li {
+        display: flex;
+        width: 100%;
+        min-height: 40px;
+        align-items: center;
+        margin-bottom: 4px;
+        word-break: break-all;
+    }
+
+    main li {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        word-break: break-all;
+    }
+
+    .public {
+        background-color: white;
+    }
+
+    .private {
+        background-color: #FFDEDE;
+    }
+
+    .leave, .join {
+        background-color: #DCDCDC;
+    }
+
+    .caixa-mensagem {
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        background-color: white;
+    }
+
+    .name {
+        font-weight: bold;
+        margin: 0 5px;
+    }
+
+    .box {
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .box ion-icon {
+        font-size: 26px;
+    }
+
+    input {
+        border: none;
+        outline: none;
+        font-family: 'Roboto', sans-serif;
+        width: 70%;
+        height: 60%;
+        font-size: 18px;
+    }
+
+    input::placeholder {
+        font-style: italic;
+        font-weight: bold;
+        color: black;
+    }
+
+    ion-icon {
+        cursor: pointer;
+    }
+
+    .menu {
+        display: none;
+        width: 100%;
+        z-index: 9999999999;
+        top: -106px;
+        right: 0px;
+        height: 200%;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .on {
+        display: flex !important;
+    }
+
+    .off {
+        display: none !important;
+    }
+
+    .options {
+        background-color: white;
+        height: 100%;
+        width: 100%;
+    }
+
+    .back {
+        width: 40%;
+        height: 100%;
+    }
+
+    .options ion-icon {
+        font-size: 35px;
+    }
+
+    .title-menu {
+        font-weight: bold;
+        font-size: 16px;
+        height: 84px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact li {
+        justify-content: space-between;
+    }
+
+    .user, .public-visibility, .private-visibility {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .public-visibility {
+        margin-bottom: 4px;
+    }
+
+    .private-visibility div, .public-visibility div{
+        display: flex;
+        align-items: center;
+    }
+
+    div.check {
+        display: none;
+    }
+
+    .check ion-icon {
+        color: #28BB25;
+        font-size: 16px;
+    }
+
+    .para {
+        margin-top: 5px;
+        font-size: 14px;
+        color: #868686;
+    }
+
+    .user {
+        display: flex;
+        flex-wrap: wrap;
+        width: 200px;
+        justify-content: flex-start;
+    }
+
+}
+/* N13 */

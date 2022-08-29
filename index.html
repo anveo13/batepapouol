@@ -1,32 +1,101 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="reset.css">
+    
     <title>Bate Papo Uol</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- topo -->
-    <div class="topo">
-        <div class="logos">
-            <img src="images/logo 1.png">
-            <ion-icon name="people-sharp" class="perfil"></ion-icon>
+    <div class="login">
+        <div class="logo">
+            <img src="images/logo 2.png">
+        </div>
+        <div class="on">
+            <input placeholder="Digite seu nome">
+            <button>Entrar</button>
+        </div>
+        <div class="loading off">
+            <img src='images/loading.jpg'>
+            <div>Entrando...</div>
         </div>
     </div>
-<!-- fim do topo -->
-    <div class="feed-mensagens">
-        
-    </div>
-<!-- caixa de mensagem -->
-    <div class="caixa">
-        <div class="texto">
-            <input type="text" value="Escreva Aqui..." class="caixaTexto">
-            <ion-icon name="paper-plane-outline" class="enviar"></ion-icon>
+    <div class="menu">
+        <div class="back"></div>
+        <div class="options">
+            <div class="title-menu">
+                Escolha um contato<br>para enviar mensagem:
+            </div>
+            <ul class="contact">
+                <li>
+                    <div class="user">
+                        <ion-icon name="people"></ion-icon> <span>Todos</span>
+                    </div>
+                    <div class="check">
+                        <ion-icon name="checkmark-sharp"></ion-icon>
+                    </div>
+                </li>
+            </ul>
+            <div class="visibility">            
+                <div class="title-menu">
+                    Escolha a visibilidade:
+                </div>
+                <div class="public-visibility lock">
+                    <div><ion-icon name="lock-open"></ion-icon>Público</div>
+                    <div class="check">
+                        <ion-icon name="checkmark-sharp"></ion-icon>
+                    </div> 
+                </div>
+                <div class="private-visibility lock">
+                    <div><ion-icon name="lock-closed"></ion-icon>Privado</div>
+                    <div class="check">
+                        <ion-icon name="checkmark-sharp"></ion-icon>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <header>
+        <div class="logo">
+            <img src="images/logo 1.png" alt="logo batepapo uol">
+        </div>
+        <ion-icon class="button-menu" name="people"></ion-icon>
+    </header>
+    <main>
+        <ul class="messages">
+            <li class="public">
+                <span class="time">(09:22:28)</span>  <span class="name">João</span> para <span class="name">Todos:</span>  Bom dia
+            </li>
+            <li class="private">
+                <span class="time">(09:22:28)</span>  <span class="name">João</span> para <span class="name">Maria:</span>  Bom dia
+            </li>
+            <li class="leave">
+                <span class="time">(09:22:28)</span>  <span class="name">João</span> sai da sala...
+            </li>
+            <li class="join">
+                <span class="time">(09:22:28)</span>  <span class="name">João</span> entrou na sala...
+            </li>
+        </ul>
+        <div class="caixa-mensagem">
+            <div class="box">
+                <div class="input">
+                    <input placeholder="Escreva aqui...">
+                    <div class="para">Enviando para Todos (publicamente)</div>
+                </div>
+                <ion-icon name="paper-plane-outline"></ion-icon>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
+<!-- N13 -->
